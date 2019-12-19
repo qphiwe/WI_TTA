@@ -1,0 +1,14 @@
+SQL Queries
+
+1.
+SELECT * FROM [Employees]
+ORDER By LastName Desc;
+
+2.
+SELECT * FROM [Suppliers]
+WHERE SupplierName LIKE 'N%'
+
+3.
+SELECT OrderID, Products.ProductID, (Price * Quantity) as Sales
+from Products 
+INNER JOIN OrderDetails ON Products.ProductID = OrderDetails.ProductID
